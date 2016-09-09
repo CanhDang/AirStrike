@@ -6,4 +6,15 @@
 //  Copyright © 2016 Enrik. All rights reserved.
 //
 
-import Foundation
+import SpriteKit
+
+extension CGPoint {
+    func add(other: CGPoint)-> CGPoint{
+        return CGPoint(x: self.x + other.x, y: self.y + other.y)
+    }
+    
+    func subtract(other: CGPoint) -> CGPoint{
+        return CGPoint(x: self.x - other.x, y: self.y - other.y)
+    }
+    
+}
